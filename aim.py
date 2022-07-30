@@ -18,6 +18,7 @@ TARGET_WIDTH = 50
 TARGET_HEIGHT = 50
 TARGET_COLOR = (0, 255, 0)
 BACKGROUND_COLOR = (10, 10, 20)
+SPAWN_SPEED = 666
 
 # Define a target object
 class Target(pygame.sprite.Sprite):
@@ -43,7 +44,7 @@ pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 ADDENEMY = pygame.USEREVENT + 1
-pygame.time.set_timer(ADDENEMY, 500)
+pygame.time.set_timer(ADDENEMY, SPAWN_SPEED)
 
 target = Target()
 targets = pygame.sprite.Group()
