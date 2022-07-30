@@ -1,0 +1,2 @@
+# pyaim
+ Practice FPS aim 
