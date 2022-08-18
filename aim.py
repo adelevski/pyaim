@@ -27,14 +27,20 @@ class Target(pygame.sprite.Sprite):
         self.surf = pygame.Surface((TARGET_WIDTH, TARGET_HEIGHT))
         self.surf.fill(TARGET_COLOR)
         self.rect = self.get_spawn_location()
+        self.speed = 1
 
     def get_spawn_location(self):
         return self.surf.get_rect(
             center=(
-                random.randint(TARGET_WIDTH/2, SCREEN_WIDTH-TARGET_WIDTH),
+                0,
                 random.randint(TARGET_HEIGHT/2, SCREEN_HEIGHT-TARGET_HEIGHT),
             )
         )
+
+    def update(self):
+        self.rect.move_ip(self.speed, 0)
+        if self.rect.right < 0:
+            self.kill
 
 # Initialize pygame
 pygame.init()
@@ -52,6 +58,13 @@ targets.add(target)
 
 # Variable to keep the main loop running
 running = True
+
+counter = 0
+
+font = pygame.font.Font('freesansbold.ttf', 32)
+text = font.render(str(counter), True, (255, 0, 0))
+textRect = text.get_rect()
+textRect.center = (10, 10)
 
 # Main loop
 while running:
@@ -78,8 +91,9 @@ while running:
 
             for s in clicked_sprites:
                 s.kill()
+                counter += 1
 
-    
+    targets.update()
     
     # Background color
     screen.fill(BACKGROUND_COLOR)
@@ -88,5 +102,8 @@ while running:
     for entity in targets:
         screen.blit(entity.surf, entity.rect)
 
+    text = font.render(str(counter), True, (255, 0, 0))
+    screen.blit(text, textRect)
+    
     # Update the display
     pygame.display.flip()
