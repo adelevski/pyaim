@@ -14,11 +14,11 @@ from pygame.locals import (
 # Define constants
 SCREEN_WIDTH = 1800
 SCREEN_HEIGHT = 900
-TARGET_WIDTH = 50
-TARGET_HEIGHT = 50
+TARGET_WIDTH = 100
+TARGET_HEIGHT = 100
 TARGET_COLOR = (0, 255, 0)
 BACKGROUND_COLOR = (10, 10, 20)
-SPAWN_SPEED = 666
+SPAWN_SPEED = 1000
 
 # Define a target object
 class Target(pygame.sprite.Sprite):
