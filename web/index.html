@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Simple moving-target mouse practice. Click the green squares."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>pyaim</title>
+    <link rel="canonical" href="https://snowball-projects.github.io/pyaim/" />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><img src="./icon.png" alt="" width="36" height="36" />pyaim</h1>
+      <div class="score"><output id="hits">0</output><span>hits</span></div>
+      <div class="controls">
+        <button id="toggle" class="primary">Start</button>
+        <button id="reset" disabled>Reset</button>
+        <button id="info" aria-label="About pyaim">ⓘ</button>
+      </div>
+    </header>
+    <main>
+      <canvas
+        id="arena"
+        tabindex="0"
+        aria-label="Moving-target practice area. Click green squares. Space or Escape pauses."
+      >
+        This game needs a browser with canvas support and a pointing device.
+      </canvas>
+      <div id="overlay">
+        <p id="message">Click the green squares.</p>
+        <span id="hint">Start when you’re ready.</span>
+      </div>
+      <noscript
+        >Enable JavaScript to play. No account or download is needed.</noscript
+      >
+    </main>
+    <footer>
+      <span id="status" role="status">Ready</span
+      ><span>Space to pause · Esc to pause</span
+      ><a href="https://snowball-projects.github.io/">snowball ↗</a>
+    </footer>
+    <dialog id="about" aria-labelledby="about-title">
+      <form method="dialog">
+        <button class="close" aria-label="Close">×</button>
+      </form>
+      <h2 id="about-title">pyaim</h2>
+      <p>
+        Click squares as they travel from left to right. Each hit removes one
+        target and adds one point. Start, pause or reset whenever you like.
+      </p>
+      <p>
+        Based on a small Python game made while enjoying first-person shooters.
+        This is mouse practice, not a calibrated reaction-time test or a promise
+        of better in-game performance. Touch works too; aiming requires a
+        pointing device.
+      </p>
+      <p>
+        Play stays on this device. No scores are saved or sent, and there are no
+        accounts or analytics. GitHub Pages processes ordinary hosting requests.
+      </p>
+      <p>
+        <a href="https://github.com/snowball-projects/pyaim">Source ↗</a> ·
+        <a href="./LICENSE">MIT license</a>
+      </p>
+    </dialog>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
