@@ -1,6 +1,6 @@
-# pyaim
+# maim
 
-- Style `pyaim` and `snowball` in lowercase. Read snowball's canonical principles
+- Style `maim` and `snowball` in lowercase. Read snowball's canonical principles
   before product decisions. Keep the game simple: moving squares, hit count and
   session controls. Do not add accounts, tracking, rankings or extra modes without
   an owner decision.

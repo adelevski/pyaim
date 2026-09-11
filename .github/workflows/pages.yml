@@ -1,4 +1,4 @@
-name: Verify and deploy pyaim
+name: Verify and deploy maim
 on:
   push:
     branches: [main]

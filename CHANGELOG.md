@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 — 2026-09-10
+
+- Rename the project and canonical repository to `maim` (mouse aim).
+- Update app labels, documentation, package metadata and snowball icon/listing.
+- Preserve Git history, previous releases, original icon provenance and old website addresses.
+- Gameplay and artwork are unchanged.
+
 ## 0.1.0 — 2026-09-10
 
 - Transfer pyaim to snowball with its history and Python experiments intact.

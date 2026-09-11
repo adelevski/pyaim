@@ -1,6 +1,8 @@
-# pyaim
+# maim
 
-[Play](https://snowball-projects.github.io/pyaim/) · [snowball](https://snowball-projects.github.io/)
+Mouse aim.
+
+[Play](https://snowball-projects.github.io/maim/) · [snowball](https://snowball-projects.github.io/)
 
 Click green squares moving from left to right. Each hit adds one point. Start,
 pause or reset whenever you like. Space toggles play while the game area has
@@ -28,7 +30,9 @@ Pushes to `main` run tests and deploy `dist/` through GitHub Pages. Set reposito
 Settings → Pages → Source to **GitHub Actions**. A manual workflow dispatch can
 republish a dormant checkout. Verify the workflow, live page and `version.json`
 before tagging a release. The canonical public repository is
-`snowball-projects/pyaim`, transferred with its existing history from `adelevski`.
+`snowball-projects/maim`, renamed from `pyaim` with its history intact.
+The former `/pyaim/` and `/projects/pyaim/` website addresses redirect through
+snowball’s main site. Keep those redirect pages when maintaining that site.
 
 ## Behavior and limits
 

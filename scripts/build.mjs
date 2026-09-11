@@ -20,4 +20,4 @@ for (const file of [
   if (!(await readFile(`dist/${file}`)).length)
     throw new Error(`Empty asset: ${file}`);
 }
-console.log(`Built pyaim ${version}`);
+console.log(`Built maim ${version}`);

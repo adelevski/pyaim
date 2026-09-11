@@ -1,4 +1,8 @@
-# pyaim icon generation
+# maim icon provenance
+
+The artwork was generated under the former name `pyaim`; the exact original
+prompt and source paths below are historical provenance. It is now the `maim`
+icon, reused unchanged.
 
 Tool: built-in image_gen.imagegen (one generation; no edits).
 Original: /Users/adelevski/.codex/generated_images/01a08d85-baa3-7f70-a45f-17290b243e05/exec-cea4ddbc-a650-4b27-961a-5788cd79711d.png
@@ -16,4 +20,3 @@ Composition/framing: one centered mark occupying about 78% of the square canvas,
 Color palette: all visible artwork uniformly deep forest green #173e39.
 Scene/backdrop: actual transparent background, including every interior gap and all negative space. Preserve real alpha transparency; do not paint a white background or checkerboard.
 Constraints: no text, no letters, no wordmark, no weapon, no gradients, no shadows, no texture, no borders around the canvas, no extra decorative objects. Create exactly one icon.
-
