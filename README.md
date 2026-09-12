@@ -68,3 +68,5 @@ Their historical bugs and tutorial provenance are documented rather than hidden.
 Original snowball software uses [MIT](LICENSE). Historical tutorial material has
 separate scope and terms in [third-party notices](THIRD-PARTY-NOTICES.md).
 The icon's [generation prompt and provenance](assets/PROMPT.md) are retained.
+
+[Operations](https://snowball-projects.github.io/operations/#maim)
